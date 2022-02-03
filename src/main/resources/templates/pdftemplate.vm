@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    Hello $person.name
+    Your address is: $person.address
+    #if($person.items.size() > 0)
+        <table>
+        #foreach($item in $person.items)
+        <tr>
+            <td>$item.id</td>
+            <td>$item.name</td>
+            <td>$item.description</td>
+        </tr>
+        #end
+        </table>
+    #end
+</body>
+</html>
